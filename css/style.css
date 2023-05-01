@@ -1,0 +1,389 @@
+/* html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+} */
+
+
+
+
+:root {
+    --color-iris: #4d5ae5;
+    --color-ocean: #404bbf;
+    --color-navy-blue: #2e2f42;
+    --color-green: #31d0aa;
+    --color-slate: #434455;
+    --color-light-slate: #8e8f99;
+    --color-cornflower: #e7e9fc;
+    --color-cloud: #f4f4fd;
+    --color-navy-blue-modal: #2e2f42;
+    --color-grey: #2e2f42;
+    --color-white: #ffffff;
+    --color-dairy: #fcfcfc;
+}
+
+
+
+body {
+    font-family: Roboto, sans-serif;
+    color: var(--color-slate);
+    background-color: var(--color-white);
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    list-style: none;
+    font-size: 16px;
+
+}
+
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+
+
+    /* outline: 2px solid red;
+    outline-offset: 2px; */
+}
+
+
+/* Reset */
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
+.list {
+    list-style: none;
+    list-style-image: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item {
+    list-style: none;
+    list-style-image: none;
+
+}
+
+.link {
+    text-decoration: none;
+
+}
+
+.item-light{
+    list-style: none;
+    list-style-image: none;
+    background-color: var(--color-white);
+}
+
+img {
+    display: block;
+}
+
+button{
+    cursor: pointer;
+}
+
+/* index.html */
+
+.page-header{
+    border-bottom: 1px solid var(--color-cornflower);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+
+    
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.header-nav-list {
+    display: flex;
+    gap: 40px;
+}
+
+.header-nav-item {
+    
+}
+
+.contacts-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.logo{
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;  
+    margin-right: 76px;
+    text-transform: uppercase;
+    color: var(--color-iris);
+}
+
+.logo-dark{
+    color: var(--color-navy-blue);
+}
+
+.logo-light{
+    color: var(--color-cloud);
+}
+
+.header-nav-link{
+    display: block;
+    font-weight: 500;
+    line-height: 1.5;
+    list-style: inherit;
+    padding: 24px 0;
+    color: var(--color-navy-blue);
+    /* margin-right: 40px; */
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus{
+    color: var(--color-ocean);
+}
+
+.header-contacts{
+    font-style: normal;
+    display: block;
+    align-items: center;
+    
+}
+
+.contacts-link {
+    line-height: 1.5;
+    color: var(--color-slate);
+
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+    color: var(--color-ocean);
+}
+
+.text-style-header-item {
+    /* header 3 */
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: 0.02em;
+    /* padding-bottom: 8px; */
+    margin-bottom: 8px;
+    color: var(--color-navy-blue);   
+}
+
+.staff-header{
+    text-align: center;
+}
+
+.text-style-subtitle{
+    /* Header 2 */
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 72px;
+    color: var(--color-navy-blue);
+}
+
+.hero-title {
+    /* Header 1 */
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    max-width: 496px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 48px ;
+    color: var(--color-white);
+}
+
+
+
+.hero-section{
+    padding: 188px 0;
+    background-color: var(--color-navy-blue); ;
+}
+
+.team-section{
+    background-color: var(--color-cloud);
+}
+
+.hero-sect-btn{
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 500;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--color-white);
+    background: var(--color-iris);
+    /* cursor: pointer; */
+
+}
+
+.hero-sect-btn:hover,
+.hero-sect-btn:focus{
+    background-color: var(--color-ocean);
+}
+
+.advantages-section{
+    padding: 120px 0;
+}
+
+.advantage-list{
+    display: flex;
+    gap: 24px;
+}
+
+.advantage-item{
+    width: calc((100% - 72px) / 4);
+}
+
+.services-section{
+    padding-bottom: 120px;
+}
+
+.services-list{
+    display: flex;
+    gap: 24px;
+}
+
+.services-item{
+    width: calc((100% - 48px) / 3);
+}
+
+.team-section{
+    padding: 120px 0;
+}
+
+.team-list{
+    display: flex;
+    gap: 24px;
+}
+
+.team-item{
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-container{
+    padding: 32px 16px
+}
+
+.content{
+    line-height: 1.5;
+    color: var(--color-slate);
+}
+
+.staff-content{
+    text-align: center;
+}
+
+.light-content{
+    max-width: 264px;
+    color: var(--color-cloud);
+}
+
+.page-footer{
+    background-color: var(--color-navy-blue);
+    padding: 100px 0;
+}
+
+.logo-footer{
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+/* portfolio */
+
+.portfolio-section{
+    padding: 96px 0 120px
+}
+
+.button-list{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px
+}
+
+.filters-btn{
+    list-style: none;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: 1px solid var(--color-cornflower);
+    color: var(--color-iris);
+    background-color: var(--color-cloud);
+    /* cursor: pointer; */
+}
+
+.filters-btn:hover,
+.filters-btn:focus{
+    border: 1px solid transparent;
+    color: var(--color-white);
+    background-color: var(--color-ocean);
+}
+
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.portfolio-item{
+    width: calc((100% - 48px) / 3);
+}
+
+.portfolio-content-container{
+    padding: 32px 16px;
+    border: 1px solid var(--color-cornflower);
+    border-top: none;
+}
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
