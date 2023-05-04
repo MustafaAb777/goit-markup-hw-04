@@ -27,7 +27,6 @@
 }
 
 
-
 body {
     font-family: Roboto, sans-serif;
     color: var(--color-slate);
@@ -255,23 +254,28 @@ button{
 
 }
 
+
 .hero-sect-btn:hover,
 .hero-sect-btn:focus{
     background-color: var(--color-ocean);
 }
 
+
 .advantages-section{
     padding: 120px 0;
 }
+
 
 .advantage-list{
     display: flex;
     gap: 24px;
 }
 
+
 .advantage-item{
     width: calc((100% - 72px) / 4);
 }
+
 
 .advantage-container{
     display: flex;
@@ -283,13 +287,16 @@ button{
     margin-bottom: 8px;
 }
 
+
 .advantage-icon{
 
 }
 
+
 .services-section{
     padding-bottom: 120px;
 }
+
 
 .services-list{
     display: flex;
